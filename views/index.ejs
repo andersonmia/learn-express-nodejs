@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serving HTML Pages</title>
+    <!-- this css link won't work bcz it is a static file sending request to the server but getting no response unless we use middleware-->
+    <link rel="stylesheet" href="/assets/static-styles.css">
+</head>
+<body>
+    <%- include ('./partials/nav'); %>
+    <h1>Welcome to the most awesome website on the net</h1>
+    <p>You won't find a better website elsewhere!</p>
+</body>
+</html>

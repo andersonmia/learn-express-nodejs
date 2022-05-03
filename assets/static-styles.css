@@ -1,0 +1,17 @@
+body{
+    background-color: aliceblue;
+    color: orange;
+    padding: 30px;
+    text-align: center;
+}
+h1{
+    color: blueviolet;
+}
+form{
+   color: blue;
+   padding: 5px;
+   margin: 5% auto;
+}
+a:hover,a:active{
+  color: orangered;
+}

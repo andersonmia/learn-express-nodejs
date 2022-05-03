@@ -1,0 +1,24 @@
+{
+  "name": "trial",
+  "version": "1.0.0",
+  "description": "learning how to use express package",
+  "main": "trial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersonmia/trying-nodejs.git"
+  },
+  "author": "ANDERSON Mia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andersonmia/trying-nodejs/issues"
+  },
+  "homepage": "https://github.com/andersonmia/trying-nodejs#readme",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.18.0",
+    "nodemon": "^2.0.16"
+  }
+}

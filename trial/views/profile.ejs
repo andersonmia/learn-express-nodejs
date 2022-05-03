@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+    <link rel="stylesheet" href="/css/static-css.css">
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    <div class="mt">
+      <h1>Welcome to <%= person %>'S profile</h1>
+      <p>Get to know <%= person %> better!</p>
+      <h3>Attributes:</h3>
+      <ul type="circle">
+        <li><strong>Skin colour: </strong><%= attributes.skincolour%></li>
+        <li><strong>Eye colour: </strong><%= attributes.eyecolour%></li>
+        <li><strong>Hair colour: </strong><%= attributes.haircolour%></li>
+        <li><strong>Age range: </strong><%= attributes.agerange%></li>
+        <li><strong>Occupation: </strong><%= attributes.occupation%></p>
+      </ul>
+      <h3>Favourites:</h3>
+      <ul type="circle">
+        <% attributes.favourites.forEach(function(activity){ %>
+          <li><%= activity %></li>
+        <% }); %>
+      </ul>
+    </div>
+</body>
+</html>

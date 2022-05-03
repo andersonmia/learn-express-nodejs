@@ -1,0 +1,9 @@
+/* installation of the express npm package*/
+-npm init (initialise your package or the project which will use the express package)
+-npm install express
+
+/* installation of nodemon*/
+-npm install nodemon -g
+
+/* installation of ejs view or template engine */
+-npm install ejs -save
