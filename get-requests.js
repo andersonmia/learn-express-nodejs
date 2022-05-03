@@ -30,5 +30,12 @@ app.get('/contactUs', (req,res) =>{
   res.sendFile(__dirname + '/contact.html');
 });
 
+// redirects
+app.get('/',(req,res) =>{
+  res.redirect('/homepage');
+});
+
+
 
 app.listen(3000);
+console.log('Listening from port 3000');
