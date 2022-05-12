@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS</title>
+</head>
+<body>
+    <!-- when embedding, we use the obect property not value -->
+    <h1>Welcome to <%= person %>'s profile</h1>
+    <h4>Personal information:</h4>
+    <p><strong>Age : </strong><%=object.age%></p>
+    <p><strong>Occupation : </strong><%=object.occupation%></p>
+    <h4>Favourites:</h4>
+    <ul type="circle">
+        <% object.favourites.forEach(function(item){ %>
+            <li><%=item%></li>
+       <%});%>
+    </ul>
+</body>
+</html>
